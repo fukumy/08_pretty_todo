@@ -1,0 +1,22 @@
+# Dependency directories
+node_modules/
+
+# IDE and Tooling
+.gemini/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.pem
+
+# Local build/cache
+browser/
+dist/
+build/

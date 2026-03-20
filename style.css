@@ -38,7 +38,8 @@ body {
     border-image: var(--royal-gold) 1;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     position: relative;
-    border-radius: 2px; /* Ornate borders often aren't rounded */
+    border-radius: 2px;
+    margin: 10px; /* 余白を確保 */
 }
 
 /* レース風の装飾 */
@@ -60,6 +61,7 @@ header h1 {
     font-size: 3.5rem;
     background: var(--royal-gold);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
     filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
@@ -191,4 +193,50 @@ footer {
 @keyframes sparkle {
     0% { transform: scale(0) rotate(0); opacity: 1; }
     100% { transform: scale(1.5) rotate(360deg); opacity: 0; }
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .main-container {
+        padding: 20px 15px;
+        margin: 5px;
+    }
+
+    header {
+        margin-bottom: 25px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .jewel-button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .main-container::after {
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+    }
+
+    .todo-item {
+        padding: 12px;
+    }
 }

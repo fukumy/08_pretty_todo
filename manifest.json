@@ -1,0 +1,17 @@
+{
+  "name": "My Royal Todo - ベルサイユの薫り",
+  "short_name": "Royal Todo",
+  "description": "麗しき日々の旋律を記す、ロイヤルなTODOリストアプリ",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#8b0000",
+  "icons": [
+    {
+      "src": "royal_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

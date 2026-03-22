@@ -1,22 +1,9 @@
-# Dependency directories
-node_modules/
+# Ignore all Markdown files except README.md
+*.md
+!README.md
 
-# IDE and Tooling
-.gemini/
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS files
+# Ignore local system/IDE files
 .DS_Store
 Thumbs.db
-
-# Secrets
+node_modules/
 .env
-*.pem
-
-# Local build/cache
-browser/
-dist/
-build/

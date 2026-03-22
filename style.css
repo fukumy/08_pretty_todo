@@ -74,10 +74,29 @@ header h1 {
     letter-spacing: 2px;
 }
 
+/* ヘッダーアイコン */
+.royal-icon-wrapper {
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--gold-border);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    object-fit: cover;
+    animation: iconPulse 3s infinite ease-in-out;
+}
+
+@keyframes iconPulse {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.4)); }
+    50% { transform: scale(1.05); filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8)); }
+}
+
 .rose-decoration {
     font-size: 1.5rem;
-    display: inline-block;
-    vertical-align: middle;
+    display: none; /* 画像に置き換えたため、既存の絵文字は非表示に */
 }
 
 /* 入力エリア */
